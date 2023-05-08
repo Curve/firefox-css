@@ -1,0 +1,39 @@
+@import "firefox-csshacks/chrome/tabs_fill_available_width.css";
+@import "firefox-csshacks/chrome/reload_button_in_urlbar.css";
+@import "firefox-csshacks/chrome/centered_tab_content.css";
+@import "firefox-csshacks/chrome/urlbar_centered_text.css";
+@import "firefox-csshacks/chrome/tabs_on_bottom.css";
+
+@import "custom/hide-window-buttons.css";
+@import "custom/titlebuttons.css";
+@import "custom/tabbar.css";
+@import "custom/csd.css";
+
+/* Increase Margin on urlbar */
+
+#nav-bar {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+:root[tabsintitlebar] #titlebar .titlebar-buttonbox-container,
+:root[tabsintitlebar] #titlebar-buttonbox-container,
+:root[tabsintitlebar][inFullscreen] #window-controls {
+  margin-top: 5px;
+}
+
+/* TreeStyleTab */
+
+/* Hide the "Tree Style Tab" header at the top of the sidebar */
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] #sidebar-header {
+  display: none;
+}
+
+/* Reduce minimum width of the sidebar #1373 */
+#sidebar {
+  min-width: 100px !important;
+}
+
+.tabbrowser-tab > .tab-stack > .tab-background {
+  border: none !important;
+}
